@@ -38,11 +38,11 @@ jobs:
       - name: Run Lint
         run: npm run lint-ui
       
-      - name: Run Jest Unit Tests
+      - name: Run Unit Tests
         run: npm run test-ui
       
       - name: Run Build
-        run: cd campusmap && npm run build
+        run: cd campusmap && npm run webpack -- --bail
     
   # Run unit tests and linter for the backend, then build the backend
   Build-Backend:
@@ -72,7 +72,7 @@ jobs:
       - name: Run Lint
         run: npm run lint-api
 
-      - name: Run Jest Unit Tests
+      - name: Run Unit Tests
         run: npm run test-api
       
       - name: Run Build

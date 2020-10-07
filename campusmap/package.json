@@ -11,7 +11,8 @@
     "start": "npm run ui-dev",
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "ui-dev": "webpack-dev-server --history-api-fallback --inline --progress --open --watch"
+    "ui-dev": "webpack-dev-server --history-api-fallback --inline --progress --open --watch",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
