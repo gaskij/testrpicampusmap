@@ -39,7 +39,7 @@ jobs:
         run: npm run lint-ui
       
       - name: Run Jest Unit Tests
-          npm run test-ui
+        run: npm run test-ui
       
       - name: Run Build
         run: cd campusmap && npm run build
