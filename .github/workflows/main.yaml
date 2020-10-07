@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: npm install-ui
+        run: npm run install-ui
 
       - name: Run Lint
         run: npm run lint-ui
@@ -67,7 +67,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: npm install-api
+        run: npm run install-api
 
       - name: Run Lint
         run: npm run lint-api
